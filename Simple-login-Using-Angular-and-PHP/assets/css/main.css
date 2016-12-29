@@ -1,0 +1,51 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/*Customize the header*/
+.tilesHolder {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+  margin-bottom:2rem;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .tilesHolder,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+ul.nav.nav-pills.pull-right{margin:5px 0px;}
+div.title-medium{background-color: #2e8bcc}
+
+form input.ng-invalid:not(.ng-pristine) {
+    box-shadow: 0px 0px 13px rgba(255, 133, 0, 0.9);
+}
+.error-message {
+    padding: 12px;
+    background-color: rgba(255, 133, 0, 0.1);
+    font-weight: bold;
+}
+input:invalid {
+    border: 1px solid red;
+} 
+div.col-sm-4{margin:10px 0px;}

@@ -1,0 +1,30 @@
+<div ng-controller="userDemoGraph">
+		<ol class="breadcrumb">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Dashboard</a></li>
+		  
+		</ol>
+	
+	<div class="panel panel-primary">
+	  <div class="panel-heading">Your Files</div>
+	  <div class="panel-body">
+	   
+	  </div>
+	</div>	
+
+	<div class="panel panel-primary">
+	  <div class="panel-heading">Your Account</div>
+	  <div class="panel-body">
+	    <div class="col-sm-4 col-md-5">
+	   		Your User Name : {{userDetails.username}}
+	   </div>
+
+	   <div class="col-sm-4 col-md-5">
+	   		Your Email Id : {{userDetails.email}}
+	   </div>
+	   <button type="button" class="btn btn-success" ng-click="editprofile()">Configure Profile</button>
+	  </div>
+	</div>
+</div>
+
+	

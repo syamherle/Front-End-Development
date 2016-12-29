@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular-route.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+
+
+</head>
+<body ng-app="myApp">
+
+<div class="container" ng-controller="mainController">
+	<div class="header clearfix">
+		<nav class="navbar navbar-default">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        	<a class="navbar-brand" href="javascript:void(0)">MyPortal</a>
+        	   
+          </div>
+	    <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+			  <li class="active">
+			    <a href="javascript:void(0)">Home</a>
+			  </li>
+			  <li>
+			    <a href="javascript:void(0)">About</a>
+			  </li>
+			  <li>
+			    <a href="javascript:void(0)">Contact</a>
+			  </li>
+			  <li>
+			    <a href="javascript:void(0)" ng-click="redirectTologin()">Login</a>
+			  </li>
+			</ul>
+		</div>
+		</nav>
+		
+	</div>
+	<div class="jumbotron" ng-view>
+  		
+	</div>
+	<footer class="footer">
+		
+		<nav class="navbar navbar-light bg-faded">
+		  <ul class="nav navbar-nav">
+		    <li class="active">
+		      <a class="text-center" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+		    </li>
+		    <li>
+		      <a class="text-center" href="javascript:void(0)">Features</a>
+		    </li>
+		    <li>
+		      <a class="text-center" href="javascript:void(0)">Pricing</a>
+		    </li>
+		    <li>
+		      <a class="text-center" href="javascript:void(0)">About</a>
+		    </li>
+		 </ul>
+		</nav>
+
+	</footer>
+<!-- end of the div -->	
+</div>
+
+</body>
+</html>
